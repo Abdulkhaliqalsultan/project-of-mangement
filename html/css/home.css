@@ -1,0 +1,265 @@
+*{
+    margin: 0.5px;
+    padding: 0;
+    color: white;
+}
+body{
+      background-image: url('background-nen-go_060720438.jpg');
+background-attachment: fixed; 
+background-size: cover;
+} 
+.header{
+background: rgba(0, 0, 0, 0.329);
+display:flex;
+position: relative;
+border-radius: 0px 0px 30px 30px;
+}
+.logo img{
+    margin: 5px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+.h2{
+    font-variant: small-caps;
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    margin-left:10px ; 
+}
+
+.search input{
+    position: absolute;
+    width: 35%;
+    left: 45%;
+    top: 20px;
+    opacity: 0;
+    height: 30px;
+    border-radius: 20px;
+    color: black;
+    padding: 0 10px;
+    transition: 0.3s ease-in-out;
+}
+.fa-solid{
+    position: absolute;
+    right: 220px;
+    font-size: 30px;
+    top: 20px;
+}  
+.nav li{
+    list-style-type: none;
+    margin-right:10px ;
+    margin-left:10px;
+}
+.nav a{
+    text-decoration: none;
+}
+.nav ul{
+    display: flex;
+    position: absolute;
+    bottom: 40px;
+    right: 10px;       
+}
+
+ /* start slide */
+
+ .slider{
+    margin: 10px auto;
+    margin-top: 50px;
+    width: 800px;
+    height: 350px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px white solid;
+    overflow: hidden;
+    animation: slid 1s ease-out;
+}
+.slider img{
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    transition: opacity 1s;
+    z-index: 1;
+    height: 57vh;
+} 
+.slider img.active{
+    opacity: 1;
+} 
+.pre,.nex{
+    background-color: #068;
+    color: white;
+    text-align: center;
+    cursor:pointer;
+    padding: 5px;
+    user-select: none;
+    border-radius: 5px;
+    width: 20%;
+}
+.pre{
+    float: left;
+}
+.nex{
+    float: right;
+}
+.fa-angle-left{
+    position: absolute;
+    left: 10px;
+    top:145px;
+    background-color: rgba(0, 0, 0, 0.329);
+    width: fit-content;
+    border-radius: 5px;
+    z-index: 2;
+}
+.fa-angle-right{
+    position: absolute;
+    right: 10px;
+    top:145px;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.329);
+    border-radius: 5px;
+    z-index: 2;
+}
+.ind{
+    width: 200px;
+    position: absolute;
+    bottom: 10px;
+    right:35% ;
+}
+.ind ul{
+    list-style: none;
+    margin: 0;
+    text-align: center;
+    list-style-type:none;
+    display: flex;
+    justify-content: space-evenly;
+    width:90%;
+}
+.ind ul li{
+    display: inline-block;
+    color: #321;
+    background-color: white;
+    width: 13px;
+    height: 13px;
+    cursor: pointer;
+    z-index: 4;
+    border-radius: 50%;  
+}
+.ind ul li.active{
+    background-color: rgb(91, 92, 92);
+    color: white;
+}
+
+/* start section*/
+
+.work{
+    margin-top: 10px;
+   width:100%;
+   z-index: 0;
+}
+.h{
+    padding-top:1px;
+    padding-bottom: 1px;
+    text-align: center;
+    color:rgb(254, 254, 255);
+    font-size: 50px;
+    text-decoration:underline;
+}
+.do{
+    padding:50px;
+   justify-content: center;
+    display:grid;
+    grid-template-columns: repeat(3,auto);
+    gap:70px;
+    z-index: 0;
+}
+.do img{
+    border-radius: 20px;
+    box-shadow: 0 0 10px  rgba(4, 24, 78, 0.5);
+    filter:grayscale(100%);
+}
+.do img:hover{
+    transition: 0.3 ease;
+    transform: scale(1.1);
+    filter:grayscale(0)
+}
+/*  */
+    
+    /*start footer*/
+
+.foot{
+    width: 100%;
+    margin-top: 5px;
+    background-color: rgba(1, 3, 3, 0.795);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.foot .fa-brands,.fa-regular{
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.5s ease-in-out; 
+}
+.fa-facebook{
+    color:white;   
+}
+.fa-facebook:hover{
+    box-shadow:0px 0px 10px  5px blue;
+    transform: scale(1.1);
+    background-color: blue;
+    color: white;
+}
+.fa-twitter{
+color: white;
+}
+.fa-twitter:hover{
+    box-shadow:0px 0px 10px  5px #00acee;
+    transform: scale(1.1);
+    color: white;
+    background-color: #00acee;
+}
+.fa-youtube{
+    color: white;
+}
+.fa-youtube:hover{
+    box-shadow:0px 0px 10px  5px red;
+    transform: scale(1.1);
+    background-color: white;
+    color: red;
+}
+.fa-whatsapp{
+    color: white;
+}
+.fa-whatsapp:hover{
+    box-shadow:0px 0px 10px  5px #25d366;
+    transform: scale(1.1);
+    color: white;
+    background-color: #25d366;
+}
+.fa-google-plus-g{
+    color: white;
+}
+.fa-google-plus-g:hover{
+    box-shadow:0px 0px 10px  5px #db4437;
+    transform: scale(1.1);
+    color: white;
+    background-color: #db4437;
+}
+.fa-tiktok{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.fa-tiktok:hover{
+    box-shadow:2px 1px 2px  2px #fe2c55,-1px -1px 2px  2px #25f4ee;
+    transform: scale(1.1);
+    color: white;
+    background-color: #000011;
+}
+.copyrighttext{
+    font-size: 22px;
+} 
